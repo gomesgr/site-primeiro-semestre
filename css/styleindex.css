@@ -1,0 +1,591 @@
+*{
+	font-family: Calibri, sans-serif;
+	font-size: 12px;
+}
+body{
+	background-color: #ffffff;
+}
+
+/*div que tem menu, logo e upperpart*/
+#headcontent{
+	top: 10px;
+	max-height: 160px;
+	width: 160px;
+	position: absolute;
+}
+
+.anuncio{
+	margin-top: 167px;
+	width: 210px;
+	height: 430px;
+	position: absolute;
+	top: 10px;
+	left: 11px;
+	border-radius: 5px;
+}
+
+.att{
+	background-color: #2e9963;
+	margin-top: 167px;
+	width: 210px;
+	height: 430px;
+	position: absolute;
+	top: 10px;
+	right: 11px;
+	border-radius: 5px;
+	text-align: center;
+}
+.logo{
+	width: 180px;
+	height: 160px;
+	position: absolute;
+	top: 10px;
+	left:25px;
+}
+
+.topmenu {
+    list-style-type: none;
+    padding: 0px;
+    margin-left:297px;
+    overflow: hidden;
+    background-color: #333;
+	width: 756.5px;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	z-index: 99;
+}
+
+.floating-top-menu {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	transition: all .20s ease;
+	font-size: 16px;
+}
+
+li a:hover, .dropdown:hover .link-top-menu {
+    background-color: #000;
+
+}
+li.dropdown{
+	display: inline-block;
+}
+.dropdown-content{
+	position: absolute;
+	padding: 10px 12px;
+	box-shadow: 1px 2px 8px #000;
+	background-color: #2e9963;
+	display: none;
+	z-index: 1;
+	text-align: left;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content a{
+	color: black;
+	padding: 10px 12px;
+	background-color: #2e9963;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	transition: all .20s ease;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+
+}
+
+
+#active{
+	background-color: #2e9963;
+	color: white;
+}
+
+#divcentro{
+	display: inline;
+}
+/*Código slider*/
+.slider {
+	width: 700px;	
+	margin: auto;
+	border: 5px groove #2e9963;
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all .20s ease;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+.infobar {
+	font-size: 8px;
+	list-style-type: none;
+	background-color: #333; 
+	bottom: 0;
+	position: absolute;
+	color: white;
+	height: 16px;
+	width: 1310px;
+	margin: 0 auto;
+	text-align: left;
+}
+.anuncio img {
+	margin: 5 0;
+}
+	
+
+/* telas grandes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	.logo{
+		width: 100px;
+		height: 80px;
+		position: fixed;
+		z-index: 0;
+		top: 70px;
+		left:25px;
+		border-radius: 12px;
+	}
+	.topmenucompact{
+		display: none;
+	}
+	.page{
+		border:1px solid transparent;
+		margin-top:15px;
+		width: 99%;
+		text-align: center;
+		z-index: 1;
+	}
+	.header {
+		z-index: 2;
+		width:70%;
+		text-align:left;
+
+  }
+	.img{
+		display:inline-block;
+		height:90%;
+		margin: 0 auto;
+}
+	.wrapper{
+		margin-top:300px;
+		text-align: center;
+	}
+	.content-wrapper{
+		padding: 0;
+	}
+	main {
+		background: white;
+		position: relative;
+		top: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+		z-index: 3;
+	}
+	main .content{
+		background: white;
+		
+	}
+	
+		li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 10px;
+		text-decoration: none;
+		transition: all .20s ease;
+		font-size: 14px;
+	}
+	
+	.dropdown-content{
+		position: absolute;
+		padding: 10px 12px;
+		box-shadow: 1px 2px 8px #000;
+		background-color: #2e9963;
+		display: none;
+		z-index: 99;
+		text-align: left;
+	}
+
+	.dropdown-content a{
+		color: black;
+		padding: 10px 12px;
+		background-color: #2e9963;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		transition: all .20s ease;
+	}
+
+
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+	
+	.slider {
+	width: 600px;	
+	margin: auto;
+	border: 5px groove #2e9963;
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	
+}
+/*parte responsavel por resimencionar os elementos de acordo com o tamanho da tela*/
+
+/* Desktops and notebooks ----------- */
+
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+.topmenucompact{
+	display:none;
+}
+
+li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: all .20s ease;
+		font-size: 16px;
+	}
+	
+	.dropdown-content{
+		position: absolute;
+		padding: 10px 12px;
+		box-shadow: 1px 2px 8px #000;
+		background-color: #2e9963;
+		display: none;
+		z-index: 99;
+		text-align: left;
+	}
+
+	.dropdown-content a{
+		color: black;
+		padding: 10px 12px;
+		background-color: #2e9963;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		transition: all .20s ease;
+	}
+
+
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+}
+
+/* telas grandes ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+.topmenucompact{
+	display:none;
+}
+
+li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		transition: all .20s ease;
+		font-size: 16px;
+	}
+	
+	.dropdown-content{
+		position: absolute;
+		padding: 10px 12px;
+		box-shadow: 1px 2px 8px #000;
+		background-color: #2e9963;
+		display: none;
+		z-index: 99;
+		text-align: left;
+	}
+
+	.dropdown-content a{
+		color: black;
+		padding: 10px 12px;
+		background-color: #2e9963;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		transition: all .20s ease;
+	}
+
+
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1824px) {
+	.logo{
+		position: fixed;
+		z-index: 0;
+		top: 80px;
+		left:25px;
+		border-radius: 12px;
+	}
+	.topmenucompact{
+		display: none;
+	}
+
+
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+}
+
+
+/* telas grandes */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	.logo{
+		width: 100px;
+		height: 80px;
+		position: fixed;
+		z-index: 0;
+		top: 70px;
+		left:25px;
+		border-radius: 12px;
+	}
+	.topmenucompact{
+		display: none;
+	}
+	.page{
+		border:1px solid transparent;
+		margin-top:15px;
+		width: 99%;
+		text-align: center;
+		z-index: 1;
+	}
+	.header {
+		z-index: 1;
+		width:70%;
+		text-align:left;
+
+  }
+	.img{
+		display:inline-block;
+		height:90%;
+		margin: 0 auto;
+}
+	.wrapper{
+		margin-top:300px;
+		text-align: center;
+	}
+	.content-wrapper{
+		padding: 0;
+	}
+	main {
+		background: white;
+		position: relative;
+		top: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+		z-index: 3;
+	}
+	main .content{
+		background: white;
+		
+	}
+
+	
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.logo{
+		display: none;
+	}
+	
+	body{
+		margin:0;
+	}
+
+	.page{
+		border:1px solid transparent;
+		margin-top:15px;
+		width: 99%;
+		text-align: center;
+		z-index: 1;
+	}
+	.header {
+		z-index: 1;
+		width:70%;
+		text-align:left;
+
+  }
+	.img{
+		display:inline-block;
+		height:90%;
+		margin: 0 auto;
+}
+	.wrapper{
+		margin-top:300px;
+		text-align: center;
+	}
+	.content-wrapper{
+		padding: 0;
+	}
+	main {
+		background: white;
+		position: relative;
+		top: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+		z-index: 3;
+	}
+	main .content{
+		background: white;
+		
+	}
+	.topmenu {
+		list-style-type: none;
+		padding: 0px;
+		margin-left:297px;
+		overflow: hidden;
+		background-color: #333;
+		width: 756.5px;
+		top: 5px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 99;
+	}
+	
+}
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	body{
+		margin:0;
+	}
+	.logo{
+		display: none;
+	}
+
+	.page{
+		border:1px solid transparent;
+		margin-top:15px;
+		width: 99%;
+		text-align: center;
+		z-index: 1;
+	}
+	.header {
+		z-index: 1;
+		width:70%;
+		text-align:left;
+
+  }
+	.img{
+		display:inline-block;
+		height:90%;
+		margin: 0 auto;
+}
+	.wrapper{
+		margin-top:150px;
+		text-align: center;
+	}
+	.content-wrapper{
+		padding: 0;
+	}
+	main {
+		background: white;
+		position: relative;
+		top: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+		z-index: 3;
+	}
+	main .content{
+		background: white;
+		
+	}
+	.att{
+		display:none
+	}
+	.anuncio{
+		display:none;
+	}
+
+}
